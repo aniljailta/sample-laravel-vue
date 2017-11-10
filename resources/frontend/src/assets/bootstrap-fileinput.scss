@@ -1,0 +1,70 @@
+.krajee-default .file-thumbnail-footer {
+  position: initial !important;
+}
+
+.krajee-default .file-drag-handle, .krajee-default .file-upload-indicator {
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+.krajee-default .file-thumb-progress {
+  top: initial !important;
+
+  .progress {
+    border-radius: 0px !important;
+  }
+}
+
+/*
+ * View bootstrap file input as 'placeholder' for file (styled)
+ * Used in /dealer-order-form, /settings
+ */
+.v-file-uploader {
+  .file-drop-zone.clickable:hover {
+    border: 1px solid #000;
+  }
+
+  .kv-file-content {
+    height: initial !important;
+  }
+
+  .file-drop-zone-title {
+    color: #000;
+    font-size: inherit;
+    padding: 0px;
+    cursor: default;
+  }
+
+  .file-drop-zone {
+    min-height: 5em;
+  }
+
+  .file-preview-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .krajee-default.file-preview-frame {
+    margin: 0 0 4px 0;
+    width: 100%;
+    display: block;
+  }
+
+  // without file attached
+  .file-drop-zone {
+    background: #f8f8f8;
+  }
+
+  // with file attached
+  &.attached .file-drop-zone {
+    background: inherit !important;
+  }
+
+  .file-thumbnail-footer label {
+    white-space: normal !important;
+  }
+
+  .file-footer-caption {
+    width: auto !important;
+  }
+}

@@ -1,0 +1,49 @@
+#customer-order-form {
+
+  div.container.generating {
+    margin-top: 1em;
+  }
+
+  div.container.generated {
+    margin-top: 1em;
+  }
+
+  .fa.invalid {
+    color: #f10011;
+    text-shadow: 1px 1px #ffffff;
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% { opacity: 0.0; }
+  }
+
+  .alert {
+    margin-top: 0.3em;
+    margin-bottom: 0;
+    padding: 3px 12px;
+  }
+
+  .alert.text-standard {
+    font-size: 14px;
+  }
+
+  /*
+   * Color picker
+   */
+  .color-picker-picked {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    height: 6.5em;
+    width: 100%;
+    background: #eee no-repeat;
+    color: #ffffff;
+    text-shadow: 1px 1px #0a001f;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .list-group-item-heading {
+    margin-bottom: 1em;
+  }
+}

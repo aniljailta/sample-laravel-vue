@@ -1,0 +1,67 @@
+&.sidebar-left-collapsed .inner-wrapper {
+  .sidebar-left {
+    width: 73px;
+
+    .sidebar-title {
+      margin-left: -300px;
+      opacity: 0;
+    }
+
+    .sidebar-toggle {
+      border-radius: 0;
+    }
+
+    .nano {
+      background: #1d2127;
+      box-shadow: -5px 0 0 #2f3139 inset;
+
+      // hide menu element title
+      > .nano-content {
+        ul.nav-main {
+          a span {
+            visibility: hidden;
+          }
+
+          li.nav-expanded .nav-children {
+            display: none;
+          }
+
+          li.nav-parent > a:after {
+            display: none;
+          }
+        }
+      }
+
+      // show menu on hover
+      // ---- hover -------
+      &:hover {
+        width: 300px;
+
+        > .nano-content {
+          // show menu element title
+          ul.nav-main {
+            li a span {
+              visibility: visible;
+            }
+
+            .nav-parent > a:after {
+              display: block;
+            }
+
+            .nav-expanded > ul.nav-children {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    margin-left: 73px;
+
+    .page-header {
+      left: 73px;
+    }
+  }
+}

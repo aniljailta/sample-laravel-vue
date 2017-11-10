@@ -1,0 +1,105 @@
+ul.nav-main {
+  margin-right: 5px;
+
+  li {
+    &.nav-parent > a:after {
+      font-family: 'FontAwesome';
+      content: '\f107';
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #abb4be;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 14px 25px;
+    }
+
+    &.nav-parent {
+      position: relative;
+      > a {
+        cursor: pointer;
+      }
+    }
+
+    // expand children
+    &.nav-expanded {
+      > a {
+        background: #21262d;
+
+        &::after {
+          content: '\f106';
+        }
+      }
+
+      .nav-children {
+        display: block;
+      }
+    }
+
+    .nav-children {
+      background: #191c21;
+      box-shadow: 0px -3px 3px -3px rgba(0, 0, 0, 0.7) inset;
+      display: none;
+      padding: 10px 0;
+
+      // !theme
+      > li.nav-active > a {
+        box-shadow: 2px 0 0 $colorBlue inset;
+        color: #fff;
+      }
+
+      li a {
+        padding: 6px 15px 6px 57px;
+        overflow: hidden;
+
+        &:hover {
+          background: #191c21;
+        }
+
+        &:focus {
+          background: #191c21;
+        }
+      }
+    }
+
+    a {
+      font-size: 13px;
+      font-size: 1.3rem;
+      color: #abb4be;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    i {
+      font-size: 18px;
+      font-size: 1.8rem;
+      width: 1.1em;
+      margin-right: 0.5em;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  > li > a {
+    padding: 12px 25px;
+
+    &:hover {
+      color: #abb4be;
+      background-color: #21262d;
+    }
+
+    &:focus {
+      background-color: #21262d;
+    }
+  }
+
+  // !theme
+  > li.nav-active > a {
+    box-shadow: 2px 0 0 $colorBlue inset;
+    color: #fff;
+  }
+}

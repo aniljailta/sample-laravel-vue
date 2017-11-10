@@ -1,0 +1,100 @@
+.sidebar-left {
+  background: #1d2127;
+  box-shadow: -5px 0 0 #2f3139 inset;
+  color: #777;
+  display: table-cell;
+  position: relative;
+  vertical-align: top;
+  width: 300px;
+  z-index: 1010;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+    flex-shrink: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 50px;
+    position: fixed;
+    top: 60px;
+  }
+
+  // mobile, small screen
+  @media only screen and (max-width: 767px) {
+    bottom: 0;
+    left: -100%;
+    min-height: 0;
+    min-width: 100%;
+    min-width: 100vw;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 98 !important;
+
+    // hide menu
+    transition-timing-function: ease-out;
+    transition-duration: 0.25s;
+    transition-property: margin;
+    margin-left: -25px;
+  }
+
+  .sidebar-header {
+    position: relative;
+    color: #777;
+    height: 50px;
+
+    .sidebar-title {
+      color: #465162;
+      padding: 15px;
+      font-size: 15px;
+      font-size: 1.5rem;
+    }
+
+    .sidebar-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 73px;
+      height: 50px;
+      background-color: #171717;
+      border-radius: 0 0 0 5px;
+      text-align: center;
+      cursor: pointer;
+
+      i {
+        color: #c3c3c3;
+        font-size: 17px;
+        font-size: 1.7rem;
+        line-height: 50px;
+        transition: all 0.15s ease-in-out;
+      }
+    }
+  }
+
+  // nano scroller + menu
+  .nano {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    > .nano-content {
+      bottom: 0;
+      left: 0;
+      overflow: scroll;
+      overflow-x: hidden;
+      right: 0;
+      top: 0;
+
+      @import "sidebar-nav";
+    }
+  }
+
+  @import "nanoscroller-custom.scss";
+
+  hr.separator {
+    background: none;
+    margin: 20px 10px 20px;
+  }
+}

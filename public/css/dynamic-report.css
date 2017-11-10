@@ -1,0 +1,154 @@
+.tab-pane  {
+    #position: relative;
+
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.tab-content {
+    padding-bottom: 1em;
+}
+
+.valueLabels {
+    font-size:70%;
+    color:black;
+}
+div.valueLabelLight {
+    opacity:0.5;
+    background-color: white;
+    border:none;
+    position:absolute;
+}
+div.valueLabel {
+    position:absolute;
+    border:none;
+}
+
+#report-dimension-area {
+    display: none;
+}
+#report-condition-area {
+    display: none;
+}
+
+.report-condition-area-list {
+    padding-left: 3px;
+}
+
+.select-dimension-item.active {
+    background: red;
+}
+
+.reports {
+    line-height: 1.42857143;
+}
+
+.reports .filter-form {
+    display: inline-block;
+
+}
+.reports .filter-form label {
+    float: left;
+}
+
+.filter-selector {
+    clear: both;
+}
+
+.filter-selector .input-group-fix {
+    padding-top: 3px;
+}
+
+#report_filter_selected {
+    clear: both;
+}
+
+.list-group-item .div-close {
+    float: right;
+}
+
+.list-group-item .close {
+    font-size: 0.75em !important;
+}
+
+.filter-dynamic-form {
+    float: left;
+    margin-right: 1em;
+}
+
+.report_result_area {
+    position: relative;
+}
+
+.report_result_area div {
+    clear: both;
+}
+
+.reports .report-actions div {
+    margin-right: 3px;
+}
+
+.reports .reports-stats-graph {
+    margin-top: 1em;
+}
+
+.reports .reports-stats-table {
+    margin-top: 3em;
+}
+
+.form-control {
+    vertical-align: middle;
+}
+
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+}
+.list-group-horizontal .list-group-item {
+    margin-bottom: 0;
+    margin-left:-4px;
+    margin-right: 0;
+    margin-top: -1px;
+}
+.list-group-horizontal .list-group-item:first-child {
+    border-top-right-radius:0;
+    border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+    border-top-right-radius:4px;
+    border-bottom-left-radius:0;
+}
+.input-group {
+    display: block;
+    padding: 0;
+}
+
+.input-group-addon, .input-group-btn, .form-control, .input-group .form-control {
+    display: inline-block;
+}
+
+.input-daterange input.input-sm {
+    line-height: 1.428571429;
+}
+
+.input-daterange .input-group-addon {
+    line-height: 1.428571429;
+}
+
+.input-daterange .form-control {
+    width: auto !important;
+}
+
+.report-col-sorted {
+    color: red;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

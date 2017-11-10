@@ -1,0 +1,43 @@
+{
+  "standard": {
+    "id": "standard",
+    "name": "Standard",
+    "label": "Standard",
+    "price": 0
+  },
+  "custom": {
+    "id": "custom",
+    "name": "Custom (color match)",
+    "label": "Custom (color match)",
+    "url": "/dealer-form/img/custom-color.png",
+    "price": 50
+  },
+  "black-walnut": {
+    "id": "black-walnut",
+    "name": "Black Walnut",
+    "label": "Black Walnut",
+    "url": "/dealer-form/img/shingle-colors/Black-Walnut.png",
+    "price": 0
+  },
+  "rustic-black": {
+    "id": "rustic-black",
+    "name": "Rustic Black",
+    "label": "Rustic Black",
+    "url": "/dealer-form/img/shingle-colors/Rustic-Black.png",
+    "price": 0
+  },
+  "Rustic-cedar": {
+    "id": "Rustic-cedar",
+    "name": "Rustic Cedar",
+    "label": "Rustic Cedar",
+    "url": "/dealer-form/img/shingle-colors/Rustic-Cedar.png",
+    "price": 0
+  },
+  "mountain-slate": {
+    "id": "mountain-slate",
+    "name": "Mountain Slate",
+    "label": "Mountain Slate",
+    "url": "/dealer-form/img/shingle-colors/Mountain-Slate.png",
+    "price": 0
+  }
+}

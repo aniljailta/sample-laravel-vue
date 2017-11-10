@@ -1,0 +1,125 @@
+.page-header {
+  z-index: 1001;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+  background: #171717;
+  border-bottom: none;
+  border-left: 1px solid #3a3a3a;
+  box-shadow: 1px 3px 0 1px #ccc;
+  height: 50px;
+  margin: -40px -40px 40px -40px;
+  padding: 0;
+
+  // !theme
+  border-left-color: #171717;
+  box-shadow: 1px 3px 0 1px #2f3139;
+
+  @media only screen and (min-width: 768px) {
+    left: 300px;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 60px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    margin: 0 -15px 20px;
+    padding-right: 80px;
+
+    h2 {
+      font-size: 16px;
+      padding: 0 15px 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100%;
+    }
+  }
+
+  .breadcrumbs {
+    display: inline-block;
+    font-size: 0;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+
+    li {
+      color: #c3c3c3;
+      display: inline-block;
+      font-weight: 300;
+
+      &:last-child:after {
+        display: none;
+      }
+
+      &:after {
+        content: '/';
+        display: inline-block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        margin: 0 10px;
+        vertical-align: middle;
+      }
+
+      a {
+        color: #c3c3c3;
+        display: inline-block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 20px;
+        vertical-align: middle;
+      }
+    }
+
+    .fa-home {
+      font-size: 2rem;
+      &:before {
+        content: "\f015";
+      }
+    }
+  }
+
+  .sidebar-right-toggle {
+    cursor: pointer;
+    color: #c3c3c3;
+    display: inline-block;
+    font-size: 17px;
+    margin: 0 0 0 10px;
+    height: 50px;
+    width: 50px;
+    vertical-align: top;
+    text-align: center;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+
+    i {
+      line-height: 53px;
+      vertical-align: middle;
+    }
+
+    @media only screen and (max-width: 767px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  h2 {
+    color: #FFF;
+    border-bottom: 4px solid #ccc;
+    border-bottom-color: $colorBlue;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    font-size: 2rem;
+    letter-spacing: normal;
+    line-height: 50px;
+    margin: 0 0 0 -1px;
+    padding: 0 22px 0 20px;
+  }
+}

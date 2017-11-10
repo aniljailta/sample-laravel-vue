@@ -1,0 +1,30 @@
+.dropdown-menu > li > a {
+  cursor: pointer;
+}
+
+.input-group-xs>.form-control,
+.input-group-xs>.input-group-addon,
+.input-group-xs>.input-group-btn>.btn {
+  height: 22px;
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.input-buttons > .btn input[type="radio"],
+.input-buttons > .btn-group > .btn input[type="radio"],
+.input-buttons > .btn input[type="checkbox"],
+.input-buttons > .btn-group > .btn input[type="checkbox"]
+{
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  // pointer-events: none;
+}
+
+.btn-lg {
+  border-radius: 4px;
+}
+
+.pagination {
+  margin: 10px 0;
+}

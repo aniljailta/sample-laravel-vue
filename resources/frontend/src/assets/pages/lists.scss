@@ -1,0 +1,139 @@
+$colorBlue: #275582;
+.page-list-items {
+
+  /*
+    TOOLS
+   */
+  .filter-buttons {
+    text-align: right;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .list-tools {
+    margin-bottom: 4px;
+  }
+
+  .report-tools {
+    > div {
+      line-height: 2.5em;
+    }
+
+    .report-tool-title {
+      float: left;
+      width: 100px;
+
+      h5 {
+        vertical-align: middle;
+      }
+    }
+
+    .report-tool .btn {
+      border-radius: 0px;
+      margin-left: -1px;
+    }
+  }
+
+  /*
+    Table LIST
+   */
+  .list {
+    /* padding: 5px 1em 0 1em; */
+    width: 100%;
+
+    &.table-responsive {
+      border: none !important;
+    }
+
+    table {
+      margin: 10px 0 10px 0 !important;
+      border: 1px solid #eee !important;
+    }
+
+    table th {
+      white-space: nowrap;
+      font-weight: 500;
+      background: #f6f6f6;
+      color: #d2cecb;
+      a {
+        color: #555;
+      }
+
+      &.sort {
+        background: #f6f6f6;
+        color: $colorBlue;
+        // background: $colorBlue;
+        // color: #fff;
+
+        a {
+          color: $colorBlue;
+          // color: #fff;
+        }
+      }
+
+      &.unsortable {
+        color: #555;
+      }
+    }
+
+    .pagination {
+      margin: 0px;
+    }
+
+    .text-red {
+      color: red;
+    }
+
+    .list-totals dd {
+      margin-bottom: 2px;
+    }
+
+    .money-cell {
+      color: #000;
+      white-space: nowrap;
+    }
+  }
+
+  .list-actions__buttons {
+    margin-bottom: 1em;
+
+    .btn-lg, .btn-group-lg > .btn {
+      font-size: 14px;
+    }
+  }
+
+  /*
+  * Searches
+  */
+  .search-form {
+    margin-top: 0.5em;
+  }
+
+  .list-group-item > label {
+    float: left;
+  }
+  .list-group-item .div-close {
+    float: right;
+  }
+  .list-group-item .close {
+    font-size: 0.75em !important;
+  }
+  .list-group-horizontal .list-group-item {
+    display: inline-block;
+  }
+  .list-group-horizontal .list-group-item {
+    height: 90px;
+    margin: -2px -1px 0 -4px;
+  }
+  .list-group-horizontal .list-group-item:first-child {
+    margin: 0px 0px 0px -4px;
+  }
+  .list-group-horizontal .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+  }
+  .list-group-horizontal .list-group-item:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+  }
+}

@@ -1,0 +1,8 @@
+/**
+ * Building Models
+ */
+const RECEIVE_BUILDING_MODELS = 'DEALER_ORDER_FORM_RECEIVE_BUILDING_MODELS'
+
+export default {
+  RECEIVE_BUILDING_MODELS
+}

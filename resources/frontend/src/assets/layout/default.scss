@@ -1,0 +1,130 @@
+a {
+  outline: none !important;
+}
+
+a,
+.btn-link {
+  color: $colorBlue;
+}
+
+a:hover,
+a:focus,
+.btn-link:hover,
+.btn-link:focus {
+  color: $primaryColorHover;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(left, transparent, rgba(0, 0, 0, 0.2), transparent);
+  margin: 22px 0 22px 0;
+}
+
+// Buttons
+
+.btn-primary {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: $colorBlue !important;
+  border-color: $colorBlue !important;
+
+  &:hover {
+    color: #fff;
+    border-color: $primaryColorHover;
+    background-color: $primaryColorHover;
+  }
+  &:focus {
+    color: #fff;
+    border-color: $primaryColorActive;
+    background-color: $primaryColorActive;
+  }
+}
+
+.btn-success {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #47a447;
+  border-color: #47a447;
+
+  &:hover {
+    color: #fff;
+    border-color: #51b451;
+    background-color: #51b451;
+  }
+  &:focus {
+    color: #fff;
+    border-color: #3f923f;
+    background-color: #3f923f;
+  }
+}
+
+.btn-info {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+
+  &:hover {
+    color: #fff;
+    border-color: #70c8e2;
+    background-color: #70c8e2;
+  }
+  &:focus {
+    color: #fff;
+    border-color: #46b8da;
+    background-color: #46b8da;
+  }
+}
+
+.btn-danger {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #d2322d;
+  border-color: #d2322d;
+
+  &:hover {
+    color: #fff;
+    border-color: #d64742;
+    background-color: #d64742;
+  }
+  &:focus {
+    color: #fff;
+    border-color: #bd2d29;
+    background-color: #bd2d29;
+  }
+}
+
+// Labels
+.label-default {
+  background: #ebebeb;
+  color: #777;
+}
+
+.label-success {
+  background: #47a447;
+  color: #fff;
+}
+
+.pagination {
+  > li {
+    a {
+      color: $primaryColorHover;
+
+      &:hover, &:focus {
+        color: $primaryColorHover;
+      }
+    }
+
+    &.active a {
+      background-color: $colorBlue;
+      border-color: $colorBlue;
+
+      &:hover, &:focus {
+        color: #fff;
+        background-color: $colorBlue;
+        border-color: $colorBlue;
+      }
+    }
+  }
+}

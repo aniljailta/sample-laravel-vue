@@ -1,0 +1,26 @@
+{
+    "24": {
+        "value": 24,
+        "name": "24 months",
+        "rto_factor": 16.8,
+        "remaining_percentage": 70
+    },
+    "36": {
+        "value": 36,
+        "name": "36 months",
+        "rto_factor": 21.6,
+        "remaining_percentage": 60
+    },
+    "48": {
+        "value": 48,
+        "name": "48 months",
+        "rto_factor": 24.6,
+        "remaining_percentage": 51
+    },
+    "60": {
+        "value": 60,
+        "name": "60 months",
+        "rto_factor": 27.2,
+        "remaining_percentage": 45
+    }
+}

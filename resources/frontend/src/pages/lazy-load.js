@@ -1,0 +1,1 @@
+export default (name, index = false) => () => import(`src/components/views/${name}${index ? '/index' : ''}.vue`)

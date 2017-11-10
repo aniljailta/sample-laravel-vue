@@ -1,0 +1,127 @@
+.userbox {
+  display: inline-block;
+  margin: 3px 17px 0 0;
+  position: relative;
+  vertical-align: middle;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .profile-picture {
+    display: inline-block;
+    vertical-align: middle;
+
+    // !theme
+    img {
+      width: 35px;
+      color: rgba(0, 0, 0, 0);
+    }
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  // !theme all
+  .profile-info {
+    margin: 0 25px 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+
+    .name {
+      color: #c3c3c3;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.2em;
+    }
+    .role {
+      display: block;
+      color: #ACACAC;
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 1.2em;
+    }
+  }
+  // !theme all
+  .custom-caret {
+    color: #c3c3c3;
+    font-size: 16px;
+    font-weight: bold;
+
+    // change icon 'down'
+    &:before {
+      content: "\f107";
+    }
+  }
+
+  .dropdown-menu {
+    background: #282d36;
+  }
+
+  // USERBOX
+  // "Open" state
+  &.open {
+    > a {
+      position: relative;
+      z-index: 993;
+
+      // change icon 'up'
+      .custom-caret:before {
+        content: "\f106";
+      }
+    }
+
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      left: -11px;
+      padding: 45px 10px 0;
+      top: -10px;
+      width: 100%;
+      z-index: 992;
+
+      i {
+        font-size: 17px;
+        font-size: 1.7rem;
+        margin-right: 3px;
+        vertical-align: middle;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      .divider {
+        background: #1d2127;
+      }
+
+      a {
+        border-radius: 2px;
+        color: #c3c3c3;
+        display: block;
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 15px;
+        line-height: 1.5rem;
+        padding: 5px 10px;
+
+        &:hover {
+          background: $colorBlue;
+          color: #FFF;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    float: left;
+    margin: 16px 0 0 12px;
+    position: relative;
+  }
+}

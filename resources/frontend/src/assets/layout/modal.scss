@@ -1,0 +1,21 @@
+.modal-icon {
+  float: left;
+  width: 20%;
+  text-align: center;
+
+  .fa {
+    font-size: 52px;
+    position: relative;
+    top: -10px;
+    color: #ccc;
+  }
+}
+
+.modal-block-primary .fa {
+  color: $colorBlue;
+}
+
+.modal-text h4 {
+  padding: 0;
+  margin: -7px 0 4px 0;
+}

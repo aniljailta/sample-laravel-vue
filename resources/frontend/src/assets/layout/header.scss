@@ -1,0 +1,97 @@
+$colorBlue: #275582 !global;
+$primaryColorHover: #286eb3 !global;
+$primaryColorActive: #1188fd !global;
+
+.header {
+  height: 60px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+
+  // !theme
+  background: #1d2127;
+  border-bottom: 1px solid #161a1e;
+  border-top: 3px solid #1d2127;
+
+  @media only screen and (min-width: 768px) {
+    position: fixed;
+    z-index: 1020;
+  }
+
+  @media only screen and (max-width: 767px) {
+    border: none;
+    height: auto;
+    position: static;
+  }
+
+  .logo-container {
+    @media only screen and (max-width: 767px) {
+      height: 60px;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 99;
+      background: #1d2127;
+      border-top: 3px solid #1d2127;
+      border-bottom: 1px solid #161a1e;
+    }
+
+    .logo {
+      float: left;
+      margin: 10px 0 0 15px;
+
+      @media only screen and (max-width: 767px) {
+        float: none;
+        display: inline-block;
+        line-height: 57px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .header-right {
+    float: right;
+    height: 56px;
+
+    @media only screen and (max-width: 767px) {
+      background: #1d2127;
+      float: none !important;
+      height: 60px;
+      margin-top: 60px;
+      width: 100%;
+    }
+  }
+
+  .separator {
+    display: inline-block;
+    height: 100%;
+    margin: 0 25px 0;
+    width: 2px;
+    vertical-align: middle;
+
+    // !theme
+    background: #1d2127 linear-gradient(#1d2127 10%, #121518);
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .toggle-sidebar-left {
+    background: $colorBlue;
+    border-radius: 100px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    top: 14px;
+    width: 30px;
+  }
+
+  @import "./userbox";
+}

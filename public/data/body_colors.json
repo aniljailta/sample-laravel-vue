@@ -1,0 +1,121 @@
+{
+  "standard": {
+    "id": "standard",
+    "name": "Standard",
+    "label": "Standard",
+    "url": "/dealer-form/img/standard-colors.png",
+    "price": 0
+  },
+  "custom": {
+    "id": "custom",
+    "name": "Custom (color match)",
+    "label": "Custom (color match)",
+    "url": "/dealer-form/img/custom-color.png",
+    "price": 50
+  },
+  "black-fox": {
+    "id": "black-fox",
+    "name": "Black Fox",
+    "label": "Black Fox",
+    "hex": "#4f4842",
+    "price": 0
+  },
+  "cottage-white": {
+    "id": "cottage-white",
+    "name": "Cottage White",
+    "label": "Cottage White",
+    "hex": "#e9e9e9",
+    "price": 0
+  },
+  "ibis-white": {
+    "id": "ibis-white",
+    "name": "Ibis White",
+    "label": "Ibis White",
+    "hex": "#f2ece6",
+    "price": 0
+  },
+  "mega-greige": {
+    "id": "mega-greige",
+    "name": "Mega Greige",
+    "label": "Mega Greige",
+    "hex": "#ada295",
+    "price": 0
+  },
+  "scarlet-past": {
+    "id": "scarlet-past",
+    "name": "Scarlet Past",
+    "label": "Scarlet Past",
+    "hex": "#b5001a",
+    "price": 0
+  },
+  "retreat-green": {
+    "id": "retreat-green",
+    "name": "Retreat Green",
+    "label": "Retreat Green",
+    "hex": "#7a8076",
+    "price": 0
+  },
+  "urban-grey": {
+    "id": "urban-grey",
+    "name": "Urban Grey",
+    "label": "Urban Grey",
+    "hex": "#4e5156",
+    "price": 0
+  },
+  "red-river": {
+    "id": "red-river",
+    "name": "Red River",
+    "label": "Red River",
+    "hex": "#3a171b",
+    "price": 0
+  },
+  "herbal-wash": {
+    "id": "herbal-wash",
+    "name": "Herbal Wash",
+    "label": "Herbal Wash",
+    "hex": "#a49b82",
+    "price": 0
+  },
+  "warm-stone": {
+    "id": "warm-stone",
+    "name": "Warm Stone",
+    "label": "Warm Stone",
+    "hex": "#887b6c",
+    "price": 0
+  },
+  "knitting-needles": {
+    "id": "knitting-needles",
+    "name": "Knitting Needles",
+    "label": "Knitting Needles",
+    "hex": "#c3c1bc",
+    "price": 0
+  },
+  "cobble-brown": {
+    "id": "cobble-brown",
+    "name": "Cobble Brown",
+    "label": "Cobble Brown",
+    "hex": "#7a6455",
+    "price": 0
+  },
+  "bees-wax": {
+    "id": "bees-wax",
+    "name": "Bees Wax",
+    "label": "Bees Wax",
+    "hex": "#eabf86",
+    "price": 0
+  },
+  "morning-sun": {
+    "id": "morning-sun",
+    "name": "Morning Sun",
+    "label": "Morning Sun",
+    "hex": "#f3e6ce",
+    "price": 0
+  },
+  "latte": {
+    "id": "latte",
+    "name": "Latte",
+    "label": "Latte",
+    "hex": "#baa185",
+    "price": 0
+  }
+}

@@ -1,0 +1,19 @@
+.nano {
+  > .nano-pane {
+    width: initial;
+
+    .nano-slider {
+      background: $colorBlue;
+      width: 4px;
+      margin: 0;
+      position: relative;
+      border-radius: 0px;
+    }
+  }
+
+  // &.has-scrollbar > .nano-content::-webkit-scrollbar {
+  &.has-scrollbar > .nano-content {
+    display: block;
+    visibility: visible;
+  }
+}

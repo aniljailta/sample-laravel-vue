@@ -1,0 +1,70 @@
+.list-group {
+  margin-bottom: 10px;
+  box-shadow: none;
+  border-radius: 0;
+
+  > a {
+    cursor: pointer;
+  }
+}
+
+.list-group-item {
+  // border: none;
+  font-size: 12px;
+  padding: 5px 15px;
+  margin-bottom: -1px;
+  color: #000;
+  background: inherit;
+  display: inline-block !important;
+  float: none !important;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-radius: 4px 4px 0px 0px;
+
+  .badge {
+    color: #999;
+    background-color: #fff;
+    border: 1px solid #999;
+    float: none;
+  }
+
+  &.action-success {
+    border-bottom-color: #eee;
+    color: #fff;
+    background-color: #5cb85c;
+    margin-left: -1px;
+  }
+
+  &:first-child {
+    border-right: none;
+  }
+
+  &:last-child {
+    border-left: none;
+  }
+
+  &.active {
+    border-bottom: 2px solid #1188fd;
+    text-shadow: none;
+    background: inherit;
+    color: #000;
+
+    &:hover, &:focus {
+      background: inherit;
+      color: #000;
+    }
+  }
+
+  .list-group-item-text {
+    color: #000;
+    text-shadow: none;
+  }
+}
+
+.list-group-item:last-child {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  background: inherit;
+}

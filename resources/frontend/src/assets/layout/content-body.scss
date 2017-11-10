@@ -1,0 +1,31 @@
+.panel-featured {
+  border-top: 3px solid #33353f;
+
+  .panel-heading {
+    background: #f6f6f6;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #DADADA;
+    padding: 18px;
+    position: relative;
+    border-radius: 0;
+  }
+}
+
+.panel-title {
+  color: #33353f;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0;
+  text-transform: none;
+}
+
+.panel-body {
+  background: #fdfdfd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+
+  + .panel-body {
+    border-radius: 0 0 5px 5px;
+  }
+}

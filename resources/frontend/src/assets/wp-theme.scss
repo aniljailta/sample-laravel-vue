@@ -1,0 +1,114 @@
+h1, h2, h3 {
+  font-family: "Open Sans", Arial, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+.page-header {
+  color: #23252f;
+}
+
+.list-group-item {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  &.main {
+
+    &:first-child {
+      border-top: 1px solid #ddd;
+    }
+  }
+
+  &:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  &.active, &.active:focus, &.active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #f28b20;
+    border-color: #f28b20;
+  }
+}
+
+.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
+  color: #0c0d0e;
+  background-color: #fff;
+}
+
+.badge {
+  color: #fff;
+  background-color: #313233;
+}
+
+
+.btn-primary, .btn-primary.focus, .btn-primary:focus {
+  color: #fff;
+  background-color: #f28b20;
+  border-color: #f28b20;
+
+  &:hover {
+    background-color: #ff9420;
+    border-color: #ff9420;
+  }
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #f28b20;
+  border-color: #f28b20;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+  color: #fff;
+  background-color: #f28b20;
+  border-color: #f28b20;
+}
+
+.btn-group .btn+.btn,
+.btn-group .btn+.btn-group,
+.btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group {
+  border-radius: 0;
+  margin-left: -1px;
+  margin-bottom: 3px;
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle),
+.input-group-btn>.btn:first-child,
+.input-group-btn>.btn:last-child {
+  border-radius: 0;
+  margin-left: -1px;
+  margin-bottom: 3px;
+}
+
+.list-group-item-success {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.list-group-item-info {
+  color: #333;
+  background-color: #e8e6de;
+}
+
+.list-group-item-warning {
+  color: #291818;
+  background-color: #f3f2f2;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: rgb(249, 217, 217);
+  border-color: #a94442;
+}
+
+select.invalid, input.invalid {
+  border-color: #a94442;
+}

@@ -1,0 +1,221 @@
+#dealer-order-form {
+
+  @import 'typeahead.scss';
+
+  height: 100%;
+  min-height: 100%;
+  overflow: auto;
+  background: #fff;
+
+  .page-header {
+    border: 1px solid rgba(232, 232, 232, 0.57);
+    border-radius: 4px;
+    background: #f7f9fa;
+
+    .panel {
+      background: inherit;
+    }
+
+    .order-note-admin-panel .panel {
+      background: #fff;
+    }
+  }
+
+  .navbar-default {
+    border: none;
+    box-shadow: none;
+    background: inherit;
+  }
+
+  .navbar-default .navbar-brand {
+    color: #000;
+    font-weight: 700;
+  }
+
+  .list-group-item.item-heading {
+    padding: 5px 15px;
+    border-bottom: 2px solid #e2e4d4;
+    background: rgba(226, 228, 212, 0.5);
+
+    h4 {
+      margin: 7px 0px;
+      font-weight: bolder;
+      color: #000;
+    }
+  }
+
+  .list-group {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .list-group-item {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .list-group-item.sub-step {
+    border-top: 0px;
+    background: rgba(212, 224, 228, 0.19);
+
+    &.preloader-container {
+      position: initial;
+    }
+
+    .list-group-item-heading {
+      font-size: 16px;
+      text-shadow: 1px 0px 0px #4c4c4c;
+      margin-top: 0.5em;
+    }
+  }
+
+  .fa.invalid {
+    color: #f10011;
+    text-shadow: 1px 1px #ffffff;
+    animation: blinker 1s linear infinite;
+  }
+
+  select.invalid, input.invalid {
+    border-color: #f10011;
+  }
+
+  @keyframes blinker {
+    50% { opacity: 0.0; }
+  }
+
+  .alert {
+    margin-top: 0.3em;
+    margin-bottom: 4px;
+    padding: 3px 12px;
+  }
+
+  .alert.text-standard {
+    font-size: 14px;
+  }
+
+  .btn-default:not(.active) {
+    // background: #fff;
+  }
+
+  .btn.disabled, .btn[disabled] {
+    opacity: .45;
+  }
+
+  .panel {
+    margin-bottom: 10px;
+  }
+
+  .panel, .list-group, .btn {
+    box-shadow: none;
+  }
+
+  /*
+   * Color picker
+   */
+  .color-picker-picked {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    height: 6.5em;
+    width: 100%;
+    background: #eee no-repeat;
+    color: #ffffff;
+    text-shadow: 1px 1px #0a001f;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /*
+   * Date picker
+   */
+
+  .rdob .datepicker, .crdob .datepicker {
+    float: none !important;
+    width: 100%;
+  }
+
+  .attachments-file-preview {
+    border: 0px;
+    padding: 0px;
+    background: #fff;
+    // padding: 0px !important;
+
+    .file-drop-zone {
+      margin: 0px !important;
+    }
+  }
+
+  .attachments-container {
+    margin-top: 0.5em;
+  }
+
+  /*
+  * FORM PROGRESS
+  */
+
+  .form-progress {
+    .list-group {
+      box-shadow: none;
+      border-radius: 0px;
+      margin-bottom: 10px;
+      padding-left: 4px;
+
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      display: inline-flex;
+      align-content: stretch;
+      width: 100%;
+
+      > a {
+        cursor: pointer;
+      }
+    }
+
+    .list-group-item {
+      // border: none;
+      background: inherit;
+      display: inline-block !important;
+      float: none !important;
+      border: none;
+      border-bottom: 2px solid #ddd;
+      // border-color: #ddd;
+      border-radius: 0px !important;
+      padding: 5px 15px;
+      margin-left: -4px;
+
+      &.active {
+        border-bottom: 2px solid #1188fd;
+        background: #fff;
+        color: #000;
+        text-shadow: none;
+
+        .badge {
+        }
+      }
+
+      &:last-child {
+        margin-bottom: -1px; // overwrite bootstrap
+      }
+
+      .list-group-item-text {
+        color: #000;
+        text-shadow: none;
+      }
+    }
+  }
+
+  /*
+  * FORM SUB PROGRESS
+  */
+
+  .form-sub-progress {
+    @import '_list-group-tabs';
+  }
+
+  // toolbar
+
+  @media (min-width: 768px) {
+    .navbar-right {
+      margin-right: 0px;
+    }
+  }
+}

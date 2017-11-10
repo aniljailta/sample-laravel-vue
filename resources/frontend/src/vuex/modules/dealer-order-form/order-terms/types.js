@@ -1,0 +1,8 @@
+/**
+ * Term
+ */
+const RECEIVE_RTO_TERMS = 'DEALER_ORDER_FORM_RECEIVE_RTO_TERMS'
+
+export default {
+  RECEIVE_RTO_TERMS
+}

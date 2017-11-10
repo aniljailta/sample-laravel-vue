@@ -1,0 +1,14 @@
+.input-daterange {
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.daterangepicker .calendar-time select {
+    border-radius: 0px;
+    height: 2em;
+    padding: 3px;
+    outline: none;
+}

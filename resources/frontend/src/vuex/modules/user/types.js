@@ -1,0 +1,13 @@
+/**
+ * User
+ */
+
+const UPDATE_USER = 'USER_UPDATE'
+const UPDATE_ROLES = 'USER_ROLES_UPDATE'
+const UPDATE_COMPANY = 'USER_COMPANY_UPDATE'
+
+export default {
+    UPDATE_USER,
+    UPDATE_ROLES,
+    UPDATE_COMPANY
+}

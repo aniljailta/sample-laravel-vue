@@ -1,0 +1,162 @@
+[v-cloak] {
+  display: none;
+}
+
+#v-app {
+  height: 100%;
+}
+
+.block {
+  display: block !important;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.nofloat {
+  float: none;
+}
+
+.pseudo-link {
+  border-bottom: 1px dotted;
+}
+
+.nb {
+  border: 0px !important;
+}
+
+.fh {
+  height: 100%;
+}
+
+.fw {
+  width: 100%;
+}
+
+.mr-none {
+  margin-right: 0 !important;;
+}
+
+.ml-none {
+  margin-left: 0 !important;
+}
+
+.mb-none {
+  margin-bottom: 0 !important;
+}
+
+.mt-none {
+  margin-top: 0 !important;
+}
+
+.mt-sm {
+  margin-top: 5px;
+}
+
+.mb-sm {
+  margin-bottom: 5px;
+}
+
+.mt-md {
+  margin-top: 10px;
+}
+
+.mb-md {
+  margin-bottom: 10px;
+}
+
+.mtb-sm {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.mtb-md {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+.br-none {
+  border-radius: 0 !important;
+}
+
+.pr-none, .plr-none {
+  padding-right: 0 !important;
+}
+
+.pl-none, .plr-none {
+  padding-left: 0 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.dotted {
+  border-bottom: 1px dotted;
+}
+
+.black {
+  color: black;
+}
+
+.ajax-preloader {
+  margin-bottom: 1em;
+}
+
+.panel-body.overlayable, .overlayable {
+  position: relative;
+}
+
+/* Overlays */
+.view-overlay {
+  position: relative;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  top: -100%; /* overlaying page-content */
+  background: #f2f2f2;
+  opacity: .5;
+  filter: Alpha(Opacity=50); /* support: IE8 */
+  /* border-radius: 5px; */
+  border: 1px solid #d2cfcf;
+  z-index: 100;
+  display: none;
+}
+
+.view-overlay-abs {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #f2f2f2;
+  opacity: .5;
+  filter: Alpha(Opacity=50); /* support: IE8 */
+  /* border-radius: 5px; */
+  border: 1px solid #d2cfcf;
+  z-index: 100;
+  display: none;
+
+  /*
+  >.loader-block {
+    color: #000;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 0;
+  }
+  */
+
+  >.loader-block {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
